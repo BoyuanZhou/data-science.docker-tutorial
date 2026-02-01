@@ -1,0 +1,49 @@
+Docker Tutorial
+
+Link: https://www.youtube.com/watch?v=pTFZFxd4hOI
+
+
+Steps to run app on a computer
+1) start operating system
+2) install compiler/intepreter, e.g., install Python
+3) copy app files, e.g., Python files
+4) run $python app.py
+
+
+Once the Dockerfile is complete
+Build the docker image by
+$ docker build -t <docker_tag> .
+-t means the tag (namely, name) of docker image
+. means build the image into the current directory
+
+
+See all docker images on the computer
+$ docker images
+or
+$ docker image ls
+
+
+Run docker image
+$ docker run <docker_tag:latest>
+this :latest specifies version if you have multiple <docker_tag>
+
+
+Show the lisf of running docker processes
+$ docker ps
+
+
+Pull a docker image from Docker Hub
+$ docker pull <the_image_you_want>
+e.g., $ docker pull ubuntu
+
+
+Run docker image in interactive mode (using -it)
+$ docker run -it <image_name>
+e.g., $ docker run -it ubuntu
+
+
+
+
+
+
+
